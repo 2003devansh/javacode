@@ -14,7 +14,7 @@ public class RemoveChar {
       char ch = unproc.charAt(0);
       
       if(ch == 'a'){
-        Skip(proc,unproc.substring(1));; // The substring() function in Java is used to extract a part of a given string.
+        Skip(proc,unproc.substring(1)); // The substring() function in Java is used to extract a part of a given string.
       }else{
        Skip(proc + ch, unproc.substring(1));
       }
