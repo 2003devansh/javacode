@@ -6,8 +6,8 @@ package randomjavaprograme;
 public class Maximum_sum_of_conti_array {
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
-        int Ans = sliding_window( arr, 2);
+        int[] arr = {2,1,5,1,2 };
+        int Ans = sliding_window( arr, 3);
         System.out.println(Ans); 
         
     }
