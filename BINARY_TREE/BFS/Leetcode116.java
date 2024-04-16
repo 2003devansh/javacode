@@ -1,4 +1,4 @@
-package BINARY_TREE;
+package BINARY_TREE.BFS;
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 
 import recursion.array_rec.returningarraylist;

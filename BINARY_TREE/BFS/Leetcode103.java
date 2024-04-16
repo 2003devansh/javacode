@@ -1,4 +1,4 @@
-package BINARY_TREE;
+package BINARY_TREE.BFS;
  // https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 
 import java.util.ArrayList;
