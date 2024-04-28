@@ -25,15 +25,6 @@ public class Leetcode112 {
         }
     }
     
-    public boolean hasPathSum(TreeNode root, int targetSum) {
-        if(root == null){
-            return false ;
-        }
-        Queue<TreeNode> queue = new LinkedList<>(); 
-        queue.offer(root) ;
-
-        
-
-    }
+    
     
 }
