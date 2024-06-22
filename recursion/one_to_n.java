@@ -6,7 +6,7 @@ package recursion;
 public class one_to_n {
 
     public static void main(String[] args) {
-        funrev(5);
+        funrev(10);
     }
      static void funrev(int n ){
          if( n == 0 ){
