@@ -9,7 +9,7 @@ public class Subset {
 
     static void subsseq( String p, String up){
         if(up.isEmpty()){
-            System.out.println(p);
+            System.out.print(p);
             return;
         }
 
