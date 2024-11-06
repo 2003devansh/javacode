@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class maze_prob2 {
     public static void main(String[] args) {
         // path(" ", 3, 3);
-       System.out.println(pathret( " ", 3 ,3));
+       System.out.println(pathret( " ", 4 ,4));
         
     }
 
