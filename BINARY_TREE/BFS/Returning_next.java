@@ -30,10 +30,7 @@ public class Returning_next {
         queue.offer(root) ;
 
         while (!queue.isEmpty()) {
-            int levelsize = queue.size() ;
-
             TreeNode currentNode = queue.poll();
-
             if(currentNode.left != null){
                 queue.offer(currentNode.left);
             }
