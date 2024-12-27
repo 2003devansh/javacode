@@ -82,7 +82,8 @@ public class Leetcode103 {
                     }
                 }
             }
-            reverse = !reverse;
+            reverse = !reverse; // agr reverse hoga toh not reverse ho jayega aur agr not reverse hoga toh reverse ho jayega 
+            
             result.add(currentLevel);
         }
 
