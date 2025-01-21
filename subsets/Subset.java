@@ -17,6 +17,6 @@ public class Subset {
         subsseq(p + ch, up.substring(1));
         subsseq(p, up.substring(1));
 
-        // either its gona take it or leave it (check notes)
+        // either its gonna take it or leave it (check notes)
     }
 }

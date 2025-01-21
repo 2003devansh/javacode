@@ -8,7 +8,7 @@ public abstract class Leetcode543 {
 
     public int diameterOfBinaryTree(TreeNode root) {
         height(root) ;
-        return diameter -1 ; 
+        return diameter -1 ; // substracing 1 because the diameter is the number of nodes on the longest path between two nodes in the tree
     }
 
     private int height(TreeNode node){
