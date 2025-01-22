@@ -4,8 +4,6 @@ package BINARY_TREE.BFS;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.management.Query;
-
 public class Leetcode101 {
     public static void main(String[] args) {
         
