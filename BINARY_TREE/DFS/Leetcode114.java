@@ -24,7 +24,7 @@ public class Leetcode114 {
      
     public void flatten(TreeNode root) {
         if(root == null){
-            return ; 
+            return ;  // means the tree is empty
         } 
 
         TreeNode current = root ; 
