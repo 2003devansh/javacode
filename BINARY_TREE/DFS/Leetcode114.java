@@ -34,7 +34,7 @@ public class Leetcode114 {
              // finding  the right most element of the left subtree
              if(current.left != null){
                 TreeNode temp = current.left ; 
-                while(temp.right != null){
+                while(temp.right != null){ 
                     temp = temp.right; 
                 }
                 temp.right = current.right ;  // connecting the right subtree to the right most element of the left subtree
