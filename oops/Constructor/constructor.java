@@ -20,7 +20,7 @@ class Student{
     float marks;
 
 
-    // if no value is guven this will take palace
+    // if no value is given this will take palace
     Student(){
         this.roll= 19;
         this.name = "default";
