@@ -12,8 +12,14 @@ public class Subset_Sum {
         boolean[][] dp = new boolean[n + 1][target + 1];
 
         // Base Case: If sum is 0, it is always possible (empty subset)
-        for (int i = 0; i <= n; i++) {
-            dp[i][0] = true;
+        for(int i = 0 ; i < n +1 ; i++){
+            for(int j = 0 ; j < target +1  ; j++ ){
+                if(i == 0){
+                    dp[i][j] = false ;  
+                }else if(j == 0 ){
+                   dp[i][j] = true ; 
+                }
+            }
         }
 
         // Fill the DP table
@@ -23,10 +29,12 @@ public class Subset_Sum {
                     dp[i][j] = dp[i - 1][j] || dp[i - 1][j - arr[i - 1]];
                 } else {
                     dp[i][j] = dp[i - 1][j];
-                }
+                } 
             }
         }
 
-        return dp[n][target];
+        return dp[n][target]; 
     }
+
+
 }
