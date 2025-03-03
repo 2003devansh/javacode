@@ -1,29 +1,44 @@
 package sliding_window;
 
+import java.util.*;
 
-import java.util.ArrayList;
+public class FirstNeg {
+    public static ArrayList<Integer> Neg_subb(int[] arr, int k) {
+        ArrayList<Integer> result = new ArrayList<>();
+        Deque<Integer> deque = new LinkedList<>();
+        int i = 0, j = 0;
 
-public class firstNeg {
-    
-
-    public static ArrayList<Integer> Neg_subb(int[] arr,int k ){
-        ArrayList<Integer> list  = new ArrayList<>() ;
-        int i = 0 ; 
-        int j = 0 ; 
         while (j < arr.length) {
-            if(arr[j] < 0){
-                list.add(arr[j]) ;
-                break ;
+            // Add negative numbers to deque
+            if (arr[j] < 0) {
+                deque.add(arr[j]);
             }
 
-            if(j - i  +1 < k ){
-                j++ ;
-            }else if(j - i + 1 == k ){
-                i++ ;
-                j++ ; 
+            // Expand window
+            if (j - i + 1 < k) {
+                j++;
+            } else if (j - i + 1 == k) {
+                // Check the first negative in the window
+                if (!deque.isEmpty()) {
+                    result.add(deque.peek());
+                } else {
+                    result.add(0);
+                }
+                
+                // Slide the window
+                if (!deque.isEmpty() && deque.peek() == arr[i]) {
+                    deque.poll();
+                }
+                i++;
+                j++;
             }
         }
+        return result;
+    }
 
-        return list ; 
+    public static void main(String[] args) {
+        int[] arr = {12, -1, -7, 8, -15, 30, 16, 28};
+        int k = 3;
+        System.out.println(Neg_subb(arr, k));
     }
 }
